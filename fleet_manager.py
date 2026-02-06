@@ -1,6 +1,6 @@
 print("hellooo test")
 
-#1. Init database
+#1. Init database:
 def init_database():
     names = ["Picard", "Riker", "Spock", "Kirk", "Crusher"]
     ranks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]
@@ -10,7 +10,7 @@ def init_database():
     return names, ranks, divs, ids
     #Returning the lists
 
-#2. Display menu
+#2. Display menu:
 def display_menu():
     user = input("What's your full name? ")
     #Quering full name
@@ -24,7 +24,7 @@ def display_menu():
     print("8. Count officers")
     #Options
 
-#3. Add member
+#3. Add member:
 def add_member(names, ranks, divs, ids):
     newId = int(input("ID: "))
     #Validates Id is unique
@@ -45,7 +45,7 @@ def add_member(names, ranks, divs, ids):
     ids.append(new_id)
     #Appending data to the 4 lists
 
-#4. Remove member
+#4. Remove member:
 def remove_member(names, ranks, divs, ids):
     removeId = int(input("Enter ID: "))
     #Asks for ID
@@ -75,3 +75,5 @@ def display_roster(names, ranks, divs, ids):
         #'Iterates' through list
         print(ids[i], names[i], ranks[i], divs[i])
         #Prints table of all crew 
+
+#7. Search crew:
