@@ -11,8 +11,8 @@ def run_system_monolith():
     
     
     loading = 0
-    while loading += 1:
-    #Kept repeating loading module 0, so adds 1to loading after each loop  
+    while loading <= 1:
+    #Kept repeating loading module 0
         print("Loading module " + str(loading))
         
     
