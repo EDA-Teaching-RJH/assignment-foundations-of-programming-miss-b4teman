@@ -1,11 +1,77 @@
 print("hellooo test")
 
-#Init database
+#1. Init database
 def init_database():
     names = ["Picard", "Riker", "Spock", "Kirk", "Crusher"]
     ranks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]
     divs  = ["Command", "Engineering", "Operations", "Security", "Sciences"]
-    ids   = [SP937215, SC231427, S179276SP, SC9370176CEC, SC110398]
+    ids   = ["SP937215", "SC231427", "S179276SP", "SC9370176CEC", "SC110398"]
     #The 4 lists, ID for crusher made up because I couldnt find one, and took out letters
     return names, ranks, divs, ids
     #Returning the lists
+
+#2. Display menu
+def display_menu():
+    user = input("What's your full name? ")
+    #Quering full name
+    print("1. Add member")
+    print("2. Remover member")
+    print("3. Update rank")
+    print("4. Display roster")
+    print("5. Search crew")
+    print("6. Filter by division")
+    print("7. Calculate payroll")
+    print("8. Count officers")
+    #Options
+
+#3. Add member
+def add_member(names, ranks, divs, ids):
+    newId = int(input("ID: "))
+    #Validates Id is unique
+    if newId in ids:
+        #Validates rank is a TNG(?) rank
+        print("ID already exists.")
+        return
+
+    rank = input("Rank: ")
+    validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]
+    if rank not in validRanks:
+        print("Invalid rank.")
+        return
+
+    names.append(input("Name: "))
+    ranks.append(rank)
+    divs.append(input("Division: "))
+    ids.append(new_id)
+    #Appending data to the 4 lists
+
+#4. Remove member
+def remove_member(names, ranks, divs, ids):
+    removeId = int(input("Enter ID: "))
+    #Asks for ID
+    if removeId in ids:
+        index = ids.index(rem_id)
+        #Finds it in index
+        names.pop(index)
+        ranks.pop(index)
+        divs.pop(index)
+        ids.pop(index)
+        #Indexes ID (position of ID)
+    else:
+        print("ID now found")
+
+#5. Update rank:
+def update_rank(names, ranks, ids):
+    updateID = int(input("ID: "))
+    #Asks user for the id to UPDATE
+    if updateID in ids:
+        index = ids.index(updateID)
+        ranks[idx] = input("New Rank: ")
+        #Updates the rank string
+
+#6. Display roster:
+def display_roster(names, ranks, divs, ids):
+    for i in range(len(names)):
+        #'Iterates' through list
+        print(ids[i], names[i], ranks[i], divs[i])
+        #Prints table of all crew 
