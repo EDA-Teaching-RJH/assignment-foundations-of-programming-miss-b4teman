@@ -11,7 +11,8 @@ def run_system_monolith():
     
     
     loading = 0
-    while loading < 5:
+    while loading += 1:
+    #Kept repeating loading module 0, so adds 1to loading after each loop  
         print("Loading module " + str(loading))
         
     
@@ -56,8 +57,7 @@ def run_system_monolith():
             count = 0
             
             for rank in r:
-                if rank == "Captain" or == "Commander":
-                #added == nefore commander     
+                if rank == "Captain" or "Commander":   
                     count = count + 1
             print("High ranking officers: " + count) 
             
