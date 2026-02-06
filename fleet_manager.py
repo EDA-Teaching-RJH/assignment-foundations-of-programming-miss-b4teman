@@ -77,3 +77,83 @@ def display_roster(names, ranks, divs, ids):
         #Prints table of all crew 
 
 #7. Search crew:
+def search_crew(names, ranks, divs, ids):
+    searchTerm = input("Search name: ").lower()
+    #Asking for search term
+    for i in range(len(names)):
+        if term in names[i].lower():
+        #Using lower because python is case sensitive
+            print(names[i], ranks[i], divs[i], ids[i])
+
+#8. Filter by division:
+def filter_by_division(names, ranks, divs, ids):
+    searchDiv = input("Division: ").lower()
+    #Asks for search term
+    for i in range(len(names)):
+        if divs[i] == searchDiv:
+            print(names[i], ranks[i], ids[i])
+            #Printing anything containing term
+
+#9. Calc payroll:
+def calculate_payroll(ranks):
+    total = 0
+    #Starting with 0
+    for r in ranks:
+        if r == "Captain":
+            total += 500
+        elif r == "Commander":
+            total += 300
+        else:
+            total += 200
+        #Adds 'pay' per diff ranks
+    return total
+
+#10. Count officers:
+def count_officers(ranks):
+    count = 0
+    for r in ranks:
+        #Adds 1 to count for each time there's captain or commander
+        if r == "Captain" or r == "Commander":
+            count += 1
+    return count
+
+#Main loop: Kinda inspired by the other code
+def main():
+    names, ranks, divs, ids = init_database()
+
+    while True:
+        choice = display_menu()
+
+        if choice == "1":
+            display_roster(names, ranks, divs, ids)
+
+        elif choice == "2":
+            add_member(names, ranks, divs, ids)
+
+        elif choice == "3":
+            remove_member(names, ranks, divs, ids)
+
+        elif choice == "4":
+            update_rank(names, ranks, ids)
+
+        elif choice == "5":
+            search_crew(names, ranks, divs, ids)
+
+        elif choice == "6":
+            filter_by_division(names, ranks, divs, ids)
+
+        elif choice == "7":
+            total = calculate_payroll(ranks)
+            print("Total payroll:", total)
+
+        elif choice == "8":
+            print("Officer count:", count_officers(ranks))
+
+        elif choice == "9":
+            print("Exiting system.")
+            break
+
+        else:
+            print("Invalid choice.")
+
+main()
