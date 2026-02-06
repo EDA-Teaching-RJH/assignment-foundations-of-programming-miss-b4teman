@@ -29,7 +29,8 @@ def run_system_monolith():
             #added another = 
             print("Current Crew List:")
             
-            for i in range(10):
+            for i in range(len(n)):
+            #How many items are in the list because it can update and therw wasnt 10
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
