@@ -66,7 +66,8 @@ def run_system_monolith():
                 if rank == "Captain" or rank == "Commander": 
                     #added or rank == before "commander"  
                     count = count + 1
-            print("High ranking officers: " + count) 
+            print("High ranking officers: " , count) 
+            #Changed + to , because string and number/int
             
         elif opt == "5":
             print("Shutting down.")
