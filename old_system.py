@@ -4,6 +4,8 @@ d = ["Command", "Command", "Operations", "Security"]
 
 active = True
 
+print("helloooo")
+
 def run_system_monolith():
     print("BOOTING SYSTEM...")
     print("...")
@@ -11,10 +13,11 @@ def run_system_monolith():
     
     
     loading = 0
-    while loading <= 1:
+    while loading < 5:
     #Kept repeating loading module 0
         print("Loading module " + str(loading))
-        
+        loading += 1
+        #Adds 1 to loading
     
     while True:
         print("\n--- MENU ---")
@@ -57,7 +60,8 @@ def run_system_monolith():
             count = 0
             
             for rank in r:
-                if rank == "Captain" or "Commander":   
+                if rank == "Captain" or rank == "Commander": 
+                    #added or rank == before "commander"  
                     count = count + 1
             print("High ranking officers: " + count) 
             
