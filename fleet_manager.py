@@ -125,16 +125,16 @@ def main():
         choice = display_menu()
 
         if choice == "1":
-            display_roster(names, ranks, divs, ids)
-
-        elif choice == "2":
             add_member(names, ranks, divs, ids)
 
-        elif choice == "3":
+        elif choice == "2":
             remove_member(names, ranks, divs, ids)
 
+        elif choice == "3":
+            update_rank(names, ranks, divs, ids)
+
         elif choice == "4":
-            update_rank(names, ranks, ids)
+            display_roster(names, ranks, ids)
 
         elif choice == "5":
             search_crew(names, ranks, divs, ids)
@@ -148,10 +148,6 @@ def main():
 
         elif choice == "8":
             print("Officer count:", count_officers(ranks))
-
-        elif choice == "9":
-            print("Exiting system.")
-            break
 
         else:
             print("Invalid choice.")
