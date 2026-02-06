@@ -44,6 +44,9 @@ def run_system_monolith():
             
            
             n.append(new_name)
+            r.append(new_rank)
+            d.append(new_div)
+            #adds crew member to each class (?) not just name
             print("Crew member added.")
             
         elif opt == "3":
