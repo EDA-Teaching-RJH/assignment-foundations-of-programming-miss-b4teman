@@ -61,7 +61,7 @@ def remove_member(names, ranks, divs, ids):
         print("ID not found")
 
 #5. Update rank:
-def update_rank(names, ranks, ids):
+def update_rank(names, ranks, divs, ids):
     updateID = int(input("ID: "))
     #Asks user for the id to UPDATE
     if updateID in ids:
@@ -81,7 +81,7 @@ def search_crew(names, ranks, divs, ids):
     searchTerm = input("Search name: ").lower()
     #Asking for search term
     for i in range(len(names)):
-        if term in names[i].lower():
+        if searchTerm in names[i].lower():
         #Using lower because python is case sensitive
             print(names[i], ranks[i], divs[i], ids[i])
 
