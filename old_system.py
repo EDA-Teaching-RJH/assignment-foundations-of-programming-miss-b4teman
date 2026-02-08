@@ -35,7 +35,8 @@ def run_system_monolith():
             
             for i in range(len(n)):
             #How many items are in the list because it can update and therw wasnt 10
-                print(n[i] + " - " + r[i]) 
+                print(n[i] + " - " + r[i] + " - " d[i]) 
+                #Added the division list too
                 
         elif opt == "2":
             new_name = input("Name: ")
