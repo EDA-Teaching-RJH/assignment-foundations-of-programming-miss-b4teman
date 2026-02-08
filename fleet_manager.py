@@ -66,7 +66,7 @@ def update_rank(names, ranks, ids):
     #Asks user for the id to UPDATE
     if updateID in ids:
         index = ids.index(updateID)
-        ranks[idx] = input("New Rank: ")
+        ranks[index] = input("New Rank: ")
         #Updates the rank string
 
 #6. Display roster:
