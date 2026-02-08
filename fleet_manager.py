@@ -90,7 +90,7 @@ def filter_by_division(names, ranks, divs, ids):
     searchDiv = input("Division: ").lower()
     #Asks for search term
     for i in range(len(names)):
-        if divs[i] == searchDiv:
+        if divs[i].lower() == searchDiv:
             print(names[i], ranks[i], ids[i])
             #Printing anything containing term
 
