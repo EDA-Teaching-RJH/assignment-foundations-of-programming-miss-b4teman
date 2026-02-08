@@ -54,7 +54,7 @@ def run_system_monolith():
             rem = input("Name to remove: ")
            
             if rem in n:
-                idx = n.index(rem)
+            idx = n.index(rem)
             n.pop(idx)
             r.pop(idx)
             d.pop(idx)
