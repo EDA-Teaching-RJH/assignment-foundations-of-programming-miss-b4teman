@@ -42,7 +42,7 @@ def add_member(names, ranks, divs, ids):
     names.append(input("Name: "))
     ranks.append(rank)
     divs.append(input("Division: "))
-    ids.append(new_id)
+    ids.append(newId)
     #Appending data to the 4 lists
 
 #4. Remove member:
@@ -50,7 +50,7 @@ def remove_member(names, ranks, divs, ids):
     removeId = int(input("Enter ID: "))
     #Asks for ID
     if removeId in ids:
-        index = ids.index(rem_id)
+        index = ids.index(removeId)
         #Finds it in index
         names.pop(index)
         ranks.pop(index)
