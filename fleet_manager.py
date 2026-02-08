@@ -58,7 +58,7 @@ def remove_member(names, ranks, divs, ids):
         ids.pop(index)
         #Indexes ID (position of ID)
     else:
-        print("ID now found")
+        print("ID not found")
 
 #5. Update rank:
 def update_rank(names, ranks, ids):

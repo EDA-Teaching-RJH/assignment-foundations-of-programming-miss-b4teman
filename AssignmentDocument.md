@@ -225,7 +225,7 @@ Full Implementation = **4 Marks**
     
 2.  **Parallel List Strategy:** Explain the dangers of using parallel lists. What happens if you remove a name from the `names` list but forget to remove the ID from the `ids` list? How did your code prevent this, or how could it be prevented? **(5 Marks)**
 Incomplete = **0 Marks**
-Partial Implementation = **3 Marks** 
+Partial Implementation = **3 Marks** , 
 Full Implementation = **5 Marks**
 
 
