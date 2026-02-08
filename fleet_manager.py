@@ -26,7 +26,7 @@ def display_menu():
 
 #3. Add member:
 def add_member(names, ranks, divs, ids):
-    newId = int(input("ID: "))
+    newId = input("ID: ")
     #Validates Id is unique
     if newId in ids:
         #Validates rank is a TNG(?) rank
