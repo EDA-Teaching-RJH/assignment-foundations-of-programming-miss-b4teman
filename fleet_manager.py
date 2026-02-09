@@ -63,7 +63,7 @@ def remove_member(names, ranks, divs, ids):
 
 #5. Update rank:
 def update_rank(names, ranks, divs, ids):
-    updateID = int(input("ID: "))
+    updateID = input("ID: ")
     #Asks user for the id to UPDATE
     if updateID in ids:
         index = ids.index(updateID)
