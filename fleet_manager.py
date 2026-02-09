@@ -122,7 +122,7 @@ def count_officers(ranks):
             count += 1
     return count
 
-#Main loop: Kinda inspired by the other code
+#Main loop
 def main():
     names, ranks, divs, ids = init_database()
 
