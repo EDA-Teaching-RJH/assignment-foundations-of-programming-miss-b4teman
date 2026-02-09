@@ -2,8 +2,6 @@ n = ["Picard", "Riker", "Data", "Worf"]
 r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
 d = ["Command", "Command", "Operations", "Security"]
 
-active = True
-
 def run_system_monolith():
     print("BOOTING SYSTEM...")
     print("...")
@@ -84,7 +82,6 @@ def run_system_monolith():
 
         
         fuel = 100
-        consumption = 0
         while fuel > 0:
             print("Idling...")
             fuel -= 1
