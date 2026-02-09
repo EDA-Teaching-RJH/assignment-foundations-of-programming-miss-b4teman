@@ -96,8 +96,8 @@ def filter_by_division(names, divs):
     #Asks for search term
     for i in range(len(names)):
         if divs[i].lower() == searchDiv:
-            print(names[i], ranks[i], ids[i])
-            #Printing anything containing term
+            print(names[i])
+            #Printing any name containing term
 
 #9. Calc payroll:
 def calculate_payroll(ranks):
