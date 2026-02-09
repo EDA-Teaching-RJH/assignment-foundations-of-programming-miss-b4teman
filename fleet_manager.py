@@ -33,9 +33,8 @@ def add_member(names, ranks, divs, ids):
         print("ID already exists.")
         return
 
-    rank = input("Rank: ")
-    validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]
-    if rank not in validRanks:
+    urank = input("Rank: ")
+    if rank not in ranks:
         print("Invalid rank.")
         return
 
