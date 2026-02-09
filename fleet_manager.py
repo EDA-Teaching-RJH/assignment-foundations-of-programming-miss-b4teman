@@ -41,7 +41,7 @@ def add_member(names, ranks, divs, ids):
         return
 
     names.append(input("Name: "))
-    ranks.append(rank)
+    ranks.append(urank)
     divs.append(input("Division: "))
     ids.append(newId)
     #Appending data to the 4 lists
