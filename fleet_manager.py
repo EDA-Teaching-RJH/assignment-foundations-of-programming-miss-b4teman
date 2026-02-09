@@ -13,7 +13,8 @@ def init_database():
 #2. Display menu:
 def display_menu():
     user = input("What's your full name? ")
-    #Quering full name
+    print("User: ", user)
+    #Quering + returning full name
     print("1. Add member")
     print("2. Remover member")
     print("3. Update rank")
@@ -23,6 +24,7 @@ def display_menu():
     print("7. Calculate payroll")
     print("8. Count officers")
     #Options
+    return input("Choose an option: ")
 
 #3. Add member:
 def add_member(names, ranks, divs, ids):
@@ -34,7 +36,7 @@ def add_member(names, ranks, divs, ids):
         return
 
     urank = input("Rank: ")
-    if rank not in ranks:
+    if urank not in ranks:
         print("Invalid rank.")
         return
 
