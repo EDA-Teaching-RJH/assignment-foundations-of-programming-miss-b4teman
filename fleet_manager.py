@@ -48,7 +48,7 @@ def add_member(names, ranks, divs, ids):
 
 #4. Remove member:
 def remove_member(names, ranks, divs, ids):
-    removeId = int(input("Enter ID: "))
+    removeId = input("Enter ID: ")
     #Asks for ID
     if removeId in ids:
         index = ids.index(removeId)
