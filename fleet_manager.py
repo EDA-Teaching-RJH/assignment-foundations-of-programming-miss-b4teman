@@ -139,7 +139,7 @@ def main():
             update_rank(names, ranks, divs, ids)
 
         elif choice == "4":
-            display_roster(names, ranks, ids)
+            display_roster(names, ranks, divs, ids)
 
         elif choice == "5":
             search_crew(names, ranks, divs, ids)
