@@ -91,3 +91,5 @@ def run_system_monolith():
             break 
             
         print("End of cycle.")
+
+run_system_monolith()
