@@ -67,8 +67,12 @@ def update_rank(names, ranks, divs, ids):
     #Asks user for the id to UPDATE
     if updateID in ids:
         index = ids.index(updateID)
-        ranks[index] = input("New Rank: ")
+        newRank = input("New rank: ")
+        ranks[index] = newRank
+        print("Rank updated! ")
         #Updates the rank string
+    else: 
+        print("ID not found ")
 
 #6. Display roster:
 def display_roster(names, ranks, divs, ids):
@@ -87,7 +91,7 @@ def search_crew(names, ranks, divs, ids):
             print(names[i], ranks[i], divs[i], ids[i])
 
 #8. Filter by division:
-def filter_by_division(names, ranks, divs, ids):
+def filter_by_division(names, divs):
     searchDiv = input("Division: ").lower()
     #Asks for search term
     for i in range(len(names)):
