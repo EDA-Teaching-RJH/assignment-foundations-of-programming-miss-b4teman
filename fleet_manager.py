@@ -78,7 +78,7 @@ def update_rank(names, ranks, divs, ids):
 def display_roster(names, ranks, divs, ids):
     for i in range(len(names)):
         #'Iterates' through list
-        print("ID: " , ids[i], "NAME: ", names[i], "RANKS:", ranks[i], "DIVISIONS: ", divs[i])
+        print("ID: ", ids[i]  , "NAME: ", names[i] , "RANK:", ranks[i] , "DIVISION: ", divs[i])
         #Prints table of all crew 
 
 #7. Search crew:
