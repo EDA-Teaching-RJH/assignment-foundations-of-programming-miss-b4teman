@@ -145,7 +145,7 @@ def main():
             search_crew(names, ranks, divs, ids)
 
         elif choice == "6":
-            filter_by_division(names, ranks, divs, ids)
+            filter_by_division(names, divs)
 
         elif choice == "7":
             total = calculate_payroll(ranks)
