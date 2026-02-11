@@ -92,12 +92,14 @@ def search_crew(names, ranks, divs, ids):
 
 #8. Filter by division:
 def filter_by_division(names, divs):
-    searchDiv = input("Division: ").lower()
-    #Asks for search term
+    searchDiv = input("Division (Command OR Operations OR Sciences): ").lower()
+    #Asks for search term, either Command, Operations, Sciences
     for i in range(len(names)):
         if divs[i].lower() == searchDiv:
             print(names[i])
             #Printing any name containing term
+        else: 
+            print("Invalid divison. Please choose from Command, Operations or Sciences ")
 
 #9. Calc payroll:
 def calculate_payroll(ranks):
