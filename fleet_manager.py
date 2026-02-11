@@ -28,24 +28,33 @@ def display_menu(user):
 
 #3. Add member:
 def add_member(names, ranks, divs, ids):
-    newId = input("ID: ")
-    #Validates Id is unique
-    if newId in ids:
-        #Validates rank is a TNG(?) rank
-        print("ID already exists.")
-        return
+    
+    while True: 
+        newId = input("ID: ")
+        if newId in ids:
+            print("ID already exists.")
+        else:
+             break
 
-    validRanks = ["Captian", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]
-    urank = input("Rank: ")
-    if urank not in validRanks:
-        print("Invalid rank.")
-        return
+    validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]  # fixed spelling
+    
+    while True:
+        urank = input("Rank: ")
+        if urank not in validRanks:
+            print("Invalid rank.")
+        else:
+            break
+    
+    uname = input("Name: ")
+    udiv = input("Division: ")
 
-    names.append(input("Name: "))
-    ranks.append(urank)
-    divs.append(input("Division: "))
+    #appends all data to lists
     ids.append(newId)
-    #Appending data to the 4 lists
+    names.append(uname)
+    ranks.append(urank)
+    divs.append(udiv)
+
+    print("Member added ")
 
 #4. Remove member:
 def remove_member(names, ranks, divs, ids):
