@@ -15,7 +15,7 @@ def display_menu(user):
     print("User: ", user)
     #Quering + returning full name
     print("1. Add member")
-    print("2. Remover member")
+    print("2. Remove member")
     print("3. Update rank")
     print("4. Display roster")
     print("5. Search crew")
