@@ -99,8 +99,8 @@ def filter_by_division(names, divs):
             if divs[i].lower() == searchDiv:
                 print(names[i])
             #Printing any name containing term
-            else: 
-                print("Invalid divison. Please choose from Command, Operations or Sciences ")
+    else: 
+        print("Invalid divison. Please choose from Command, Operations or Sciences ")
 
 #9. Calc payroll:
 def calculate_payroll(ranks):
