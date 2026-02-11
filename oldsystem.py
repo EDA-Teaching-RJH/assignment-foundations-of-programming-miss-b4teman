@@ -87,7 +87,7 @@ def run_system_monolith():
             print("Idling...")
             fuel -= 1
             consumption += 1
-            print("Fuel left: ", fuel)
+            print("Fuel left: 1", fuel)
             print("Fuel used: ", consumption)
             break 
             

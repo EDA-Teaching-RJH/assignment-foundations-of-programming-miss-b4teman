@@ -36,7 +36,7 @@ def add_member(names, ranks, divs, ids):
         else:
              break
 
-    validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]  # fixed spelling
+    validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"] 
     
     while True:
         urank = input("Rank: ").title()
