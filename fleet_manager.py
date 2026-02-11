@@ -12,7 +12,7 @@ def init_database():
 
 #2. Display menu:
 def display_menu(user):
-    print("User: ", user)
+    print("User: ", user.title())
     #Quering + returning full name
     print("1. Add member")
     print("2. Remove member")
@@ -39,14 +39,14 @@ def add_member(names, ranks, divs, ids):
     validRanks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Ensign"]  # fixed spelling
     
     while True:
-        urank = input("Rank: ")
+        urank = input("Rank: ").title()
         if urank not in validRanks:
             print("Invalid rank.")
         else:
             break
     
-    uname = input("Name: ")
-    udiv = input("Division: ")
+    uname = input("Name: ").title()
+    udiv = input("Division: ").title()
 
     #appends all data to lists
     ids.append(newId)
@@ -98,7 +98,7 @@ def search_crew(names, ranks, divs, ids):
     for i in range(len(names)):
         if searchTerm in names[i].lower():
         #Using lower because python is case sensitive
-            print(names[i], ranks[i], divs[i], ids[i])
+            print("Result:", names[i], ranks[i], divs[i], ids[i])
 
 #8. Filter by division:
 def filter_by_division(names, divs):
