@@ -22,6 +22,7 @@ def display_menu(user):
     print("6. Filter by division")
     print("7. Calculate payroll")
     print("8. Count officers")
+    print("9. Quit")
     #Options
     return input("Choose an option: ")
 
@@ -158,6 +159,10 @@ def main():
 
         elif choice == "8":
             print("Officer count:", count_officers(ranks))
+
+        elif choice == "9":
+            print("Goodbye ")
+            break
 
         else:
             print("Invalid choice.")
