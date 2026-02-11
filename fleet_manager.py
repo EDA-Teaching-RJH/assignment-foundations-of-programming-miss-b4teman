@@ -11,8 +11,7 @@ def init_database():
     #Returning the lists
 
 #2. Display menu:
-def display_menu():
-    user = input("What's your full name? ")
+def display_menu(user):
     print("User: ", user)
     #Quering + returning full name
     print("1. Add member")
@@ -78,7 +77,7 @@ def update_rank(names, ranks, divs, ids):
 def display_roster(names, ranks, divs, ids):
     for i in range(len(names)):
         #'Iterates' through list
-        print("ID: ", ids[i]  , "NAME: ", names[i] , "RANK:", ranks[i] , "DIVISION: ", divs[i])
+        print("ID:",ids[i]  , " NAME:",names[i] , " RANK:",ranks[i] , " DIVISION:",divs[i])
         #Prints table of all crew 
 
 #7. Search crew:
@@ -129,8 +128,10 @@ def count_officers(ranks):
 def main():
     names, ranks, divs, ids = init_database()
 
+    user = input("What's your full name? ")
+
     while True:
-        choice = display_menu()
+        choice = display_menu(user)
 
         if choice == "1":
             add_member(names, ranks, divs, ids)
